@@ -1,4 +1,4 @@
-let n = 15;
+let n = 35;
 let inputLine = '';
 let asterisc = '*';
 let auxiliar = 1;
@@ -16,9 +16,9 @@ if(n%2 != 0){
                 inputLine = emptySpace.repeat((n-auxiliar)/2) + asterisc + emptySpace.repeat(auxiliar-2) + asterisc;
                 console.log(inputLine);
                 inputLine = '';
-                break;                 
+                break; 
                                  
-        }                        
+        }                    
         auxiliar += 2;        
     }
 
@@ -26,7 +26,5 @@ if(n%2 != 0){
     console.log(inputLine);
 } else {
     console.log ("Valor invalido para a variavel n, ela devera ser impar!");
-}   
-
-   
+}  
     

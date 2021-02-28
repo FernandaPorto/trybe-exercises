@@ -1,8 +1,8 @@
-let n = 5;
+let n = 7;
 let inputLine = '';
 let asterisc = '*';
 let emptySpace = ' ';
-let auxiliar = 4;
+let auxiliar = n-1;
 
 for(let colum = 0; colum<n; colum += 1){
     for (let index = 0; index<n; index += 1){

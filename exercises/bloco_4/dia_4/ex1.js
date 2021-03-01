@@ -12,4 +12,4 @@ let player = {
     
 };
    
-console.log('A primeira jogarora chama-se '+ player.name + player.lastName ' e possui ' + player.age + ' anos de idade');
+console.log('A primeira jogarora chama-se '+ player.name + ' ' + player.lastName +' e possui '+ player.age + ' anos de idade');

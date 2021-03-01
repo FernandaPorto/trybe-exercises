@@ -128,3 +128,73 @@ function notaConceitual(notaPercent) {
 }
 
 console.log(notaConceitual(-20));
+
+// Questa 08:
+
+function evenNumber(a, b, c) {
+    let result = '';
+    if ((a%2 == 0)|| (b%2 == 0) || (c%2 == 0)){
+        result = 'True: Ao menos um dos numeros dados eh par!!';
+    } else {
+        result = 'False: Todos os numeros sao impar!!';
+    }
+    return result;
+}
+console.log(evenNumber(1,25,31));
+
+// Questao 09:
+
+function oddNumber(a, b, c) {
+    let result = '';
+    if ((a%2 != 0)|| (b%2 != 0) || (c%2 != 0)){
+        result = 'True: Ao menos um dos numeros dados eh impar!!';
+    } else {
+        result = 'False: Todos os numeros sao par!!';
+    }
+    return result;
+}
+console.log(oddNumber(10,2,30));
+
+// Questao 10:
+
+function profit(costValue, saleValue) {    
+    let profitValue = 0;
+    if ((saleValue > 0) && (costValue > 0)){
+        profitValue = saleValue - 1.2*costValue; 
+    } else {
+        console.log('Error: Os valores de entrada devem ser positivos!!');
+    }
+    return profitValue;
+}
+console.log(profit(10,-20));
+
+// Questao 11:
+
+function salarioLiquido(salarioBruto) {
+    let aliquotaINSS = 0;
+    if (salarioBruto < 1556.95){
+        aliquotaINSS = 0.08*salarioBruto;
+    } else if ((salarioBruto >= 1556.95) && (salarioBruto < 2594.93)) {
+        aliquotaINSS = 0.09*salarioBruto;
+    } else if ((salarioBruto >= 2594.93) && (salarioBruto < 5189.83)) {
+        aliquotaINSS = 0.11*salarioBruto;
+    } else {
+        aliquotaINSS = 570.88;
+    }
+    let salarioBase = salarioBruto - aliquotaINSS;    
+    let aliquotaIR = 0;
+    if (salarioBase < 1903.99) {
+        aliquotaIR = 0;
+    } else if ((salarioBase >= 1903.99) && (salarioBase < 2826.66)) {
+        aliquotaIR = 0.075*salarioBase - 142.8;
+    } else if ((salarioBase >= 2826.66) && (salarioBase < 3751.06)) {
+        aliquotaIR = 0.15*salarioBase - 354.8;
+    } else if ((salarioBase >= 3751.06) && (salarioBase < 4664,69)) {
+        aliquotaIR = 0.225*salarioBase - 636.13;
+    } else {
+        aliquotaIR = 0.275*salarioBase - 869.36;
+    }
+    let valorLiquido = salarioBase - aliquotaIR;
+    return valorLiquido;
+}
+console.log(salarioLiquido(3000));

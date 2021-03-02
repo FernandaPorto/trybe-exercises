@@ -1,4 +1,4 @@
-let n = 35;
+let n = 7;
 let inputLine = '';
 let asterisc = '*';
 let auxiliar = 1;

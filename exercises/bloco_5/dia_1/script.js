@@ -17,5 +17,7 @@
         paragraphByClass[0].style.textAlign = "center";
         paragraphByClass[0].style.backgroundColor = "black";
 
-        
-        
+    var elemntByTag = document.getElementsByTagName("h4")[0];
+        elemntByTag.style.color = "silver";
+        elemntByTag.style.backgroundColor = "red";
+        elemntByTag.style.textAlign = "center";

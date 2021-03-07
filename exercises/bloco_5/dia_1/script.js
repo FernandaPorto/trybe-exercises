@@ -11,4 +11,11 @@
         secondParagraph.style.padding = '20px';
         secondParagraph.style.borderRadius = '30px';
 
-    document.getElementById("subtitle").innerText = "Fernanda"
+    document.getElementById("subtitle").innerText = "Fernanda";
+
+    var paragraphByClass = document.getElementsByClassName("teste");
+        paragraphByClass[0].style.textAlign = "center";
+        paragraphByClass[0].style.backgroundColor = "black";
+
+        
+        

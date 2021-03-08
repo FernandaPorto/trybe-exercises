@@ -1,0 +1,29 @@
+
+<div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+    <script>
+        let generateBrother = document.createElement("div");
+            document.body.querySelector("#pai").appendChild(generateBrother);
+            generateBrother.className = "brother";
+
+        let generateSon = document.createElement("div");
+            document.body.querySelector("#elementoOndeVoceEsta").appendChild(generateSon);
+            generateSon.id = "terceiroEAgoraSimUltimoFilhoDoFilho";
+
+        let filhoDoFilhoDoFilho = document.createElement("span");
+            document.body.querySelector("#primeiroFilhoDoFilho").appendChild(filhoDoFilhoDoFilho);
+            filhoDoFilhoDoFilho.id = "filhoDeAlgumGrauAí";
+
+        let terceiroFilho = document.querySelector("#filhoDeAlgumGrauAí").parentElement.parentElement.nextElementSibling;
+    </script>
+  </div>
+

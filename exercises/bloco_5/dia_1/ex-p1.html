@@ -40,7 +40,7 @@
     </div>
     <script>
 
-        var paragraph = document.querySelector("p");
+        var paragraph = document.getElementsByTagName("p")[1];
             paragraph.innerText = "Daqui a 2 anos pretendo estar trabalhando com força na área de desenvolvimento e recebendo $$ BEM!!!"
        
         var main = document.querySelector("div");
@@ -52,10 +52,10 @@
         var correction = document.querySelector("h1");
             correction.innerText = "Exercício 5.1 - Java Script"
 
-        // var allCapsLock = document.querySelectorAll("p");
-        //     for (let key in allCapsLock) {
-        //         allCapsLock[key].innerText.toUpperCase()
-        //     }
+        var allCapsLock = document.querySelectorAll("p");
+            for (let key in allCapsLock) {
+                allCapsLock[key].innerText = allCapsLock[key].innerText.toUpperCase();
+            }
         
         var contentTagsP = document.querySelectorAll("p")
             for (let key2 in contentTagsP) {

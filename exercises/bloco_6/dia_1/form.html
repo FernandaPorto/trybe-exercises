@@ -9,28 +9,34 @@
 <body>
     <form action="">
         <fieldset>
-            <legend>Set your info</legend>
+            <legend>Set your personal info</legend>
             <label for="name">Nome Completo:</label>
-            <input type="text" required id="name" maxlength="40">
-            <br>
+            <input type="text" required id="name" maxlength="40"><br><br>
             <label for="mail">e-mail:</label>
-            <input type="text" required id="mail" maxlength="50">
-            <br>
+            <input type="text" required id="mail" maxlength="50"><br><br>
             <label for="cpf">CPF:</label>
-            <input type="text" required id="cpf" maxlength="11">
-            <br>
+            <input type="text" required id="cpf" maxlength="11"><br><br>
             <label for="adress">Endereço:</label>
-            <input type="text" required id="adress" maxlength="200">
-            <br>
-            <label for="city">Endereço:</label>
-            <input type="text" required id="city" maxlength="28">
-            <br>
-            <label for="cpf">CPF:</label>
-            <input type="number" required id="cpf" max="11">
-            <br>
+            <input type="text" required id="adress" maxlength="200"><br><br>
+            <label for="city">Cidade:</label>
+            <input type="text" required id="city" maxlength="28"><br><br>
             <label for="state">Estado</label>
-            <select name="state" id="state"></select>
+            <select name="state" id="state"></select><br><br>
+            <label for="moradia">Tipo de Modaria:<br><br>            
+            <div>
+                <label for="apt">
+                <input type="radio" name="moradia" id="apt">Apartamento</label>
+                <label for="house">
+                <input type="radio" name="moradia" id="house">Casa</label>
+            </div>
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Set your last job Info</legend>
         </fieldset>
     </form>
 </body>
+<script src="script.js"></script>
 </html>

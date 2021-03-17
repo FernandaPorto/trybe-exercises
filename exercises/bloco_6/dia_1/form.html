@@ -11,15 +11,15 @@
         <fieldset>
             <legend>Set your personal info</legend>
             <label for="name">Nome Completo:</label>
-            <input type="text" required id="name" maxlength="40"><br><br>
+            <input type="text" required id="name" maxlength="40" placeholder="Digite o seu nome completo"><br><br>
             <label for="mail">e-mail:</label>
-            <input type="text" required id="mail" maxlength="50"><br><br>
+            <input type="text" required id="mail" maxlength="50" placeholder="Digite o seu e-mail"><br><br>
             <label for="cpf">CPF:</label>
-            <input type="text" required id="cpf" maxlength="11"><br><br>
+            <input type="text" required id="cpf" maxlength="11"placeholder="Digite o seu CPF"><br><br>
             <label for="adress">Endereço:</label>
-            <input type="text" required id="adress" maxlength="200"><br><br>
+            <input type="text" required id="adress" maxlength="200"placeholder="Digite o seu endereço"><br><br>
             <label for="city">Cidade:</label>
-            <input type="text" required id="city" maxlength="28"><br><br>
+            <input type="text" required id="city" maxlength="28"placeholder="Digite o sua cidade"><br><br>
             <label for="state">Estado</label>
             <select name="state" id="state"></select><br><br>
             <label for="moradia">Tipo de Modaria:<br><br>            
@@ -35,6 +35,14 @@
         <br>
         <fieldset>
             <legend>Set your last job Info</legend>
+            <label for="resume">Resumo: </label><br><br>
+            <textarea name="resume" id="resume" cols="30" rows="10" required maxlength="1000" placeholder="Digite aqui um resumo do seu último emprego"></textarea><br><br>
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="lastJob" id="cargo" required placeholder="Digite o seu último cargo"><br><br>
+            <label for="description">Descrição: </label>
+            <input type="text" name="lastJob" id="description"required maxlength="500"placeholder="Digite aqui uma descrição">
+            <label for="date"></label>
+            <input type="text" id="date" required>
         </fieldset>
     </form>
 </body>

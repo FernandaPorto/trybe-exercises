@@ -32,6 +32,8 @@ function stateOptions() {
     const stateFather = document.getElementById('state');
     for (let key in brazilStates) {
         const createOption = document.createElement('option');
+        createOption.setAttribute('name','state');
+        createOption.value = key;
         createOption.id = key;
         createOption.innerText = brazilStates[key];      
         stateFather.appendChild(createOption);

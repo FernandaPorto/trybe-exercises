@@ -29,7 +29,29 @@ function createDaysOfTheWeek() {
 			if(dezDaysList[key] === 4 || dezDaysList[key] === 11 || dezDaysList[key] === 18 || dezDaysList[key] === 25) {
 				createLi.classList.add('friday');
 			}
-
   	}
-	
-	
+		
+		// Exercício 2: 		
+		function createButton() {
+			const buttonFather = document.querySelector('.buttons-container');
+			const btn = document.createElement('button');
+			btn.type = 'button';
+			btn.innerHTML = 'Feriados';
+			btn.id = 'btn-holiday';
+			buttonFather.appendChild(btn);
+		}
+		createButton();
+
+		// Exercício 3:
+		document.querySelector('#btn-holiday').addEventListener('click', () => {
+			const holidays = document.getElementsByClassName('holiday');
+			for (let key in holidays) {
+				if(holidays[key].style.backgroundColor === 'gray') {
+					holidays[key].style.backgroundColor = 'rgb(238,238,238)';
+					holidays[key].style.color = '#666'					
+				} else {
+					holidays[key].style.backgroundColor = 'gray';
+					holidays[key].style.color = 'yellow'
+				}
+			}
+		})

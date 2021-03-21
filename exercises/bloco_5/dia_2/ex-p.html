@@ -57,17 +57,31 @@
   </head>
   <body>
     <script>
+      // Exercício 1:
       const getBody = document.querySelector('body');
       const makeHeading = document.createElement('h1');
        makeHeading.innerText = 'Exercício 5.2 - JavaScript DOM';
        getBody.appendChild(makeHeading);
+      
+      // Exercício 2:
       const div = document.createElement('div');
       div.className = 'main-content';
       getBody.appendChild(div);
-      const getMainContent = document.getElementsByClassName('main-content');
+      
+      // Exercício 3:
+      const getMainContent = document.querySelector('.main-content');
       const div2 = document.createElement('div');
       div2.className = 'center-content';
       getMainContent.appendChild(div2);
+      
+      // Exercício 4:
+      const getDiv2 = document.querySelector('.center-content');
+      const makeParagraph = document.createElement('p');
+      makeParagraph.className = 'paragraph';
+      getDiv2.appendChild(makeParagraph);
+      makeParagraph.innerText = 'Teste - Acrescentando texto no parágrafo do exercício 5.2';
+
+
     </script>
   </body>
 </html>

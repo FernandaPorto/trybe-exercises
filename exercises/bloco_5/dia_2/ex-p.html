@@ -81,7 +81,34 @@
       getDiv2.appendChild(makeParagraph);
       makeParagraph.innerText = 'Teste - Acrescentando texto no parágrafo do exercício 5.2';
 
+      // Exercício 5:
+      const div3 = document.createElement('div');
+      div3.className = 'left-content';
+      getMainContent.appendChild(div3);
 
+      // Exercício 6:
+      const div4 = document.createElement('div');
+      div4.className = 'right-content';
+      getMainContent.appendChild(div4);
+
+      // Exercício 7:
+      const img = document.createElement('img');
+      const getDiv3 = document.querySelector('.left-content');
+      img.className = 'small-image';
+      // img.setAttribute('src','https://picsum.photos/200');
+      img.src = 'https://picsum.photos/200';      
+      getDiv3.appendChild(img);
+
+      // Exercício 8:
+      for (let index = 1; index < 11; index += 1) {
+        const getDiv4 = document.querySelector('.right-content');
+        const uL = document.createElement('ul');
+        uL.className = 'unordernadedList';
+        getDiv4.appendChild(uL);
+        const createLi = document.createElement('li');
+        createLi.innerHTML = index;
+        uL.appendChild(createLi);
+      }
     </script>
   </body>
 </html>

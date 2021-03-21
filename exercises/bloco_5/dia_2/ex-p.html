@@ -46,8 +46,9 @@
       .main-content .right-content {
         background-color: blue;
         width: 60%;
-        margin-left: auto;
-        margin-right: 0;
+        /* margin-left: auto;
+        margin-right: 0; */
+        margin: auto; 
       }
 
       .main-content .description {
@@ -100,11 +101,11 @@
       getDiv3.appendChild(img);
 
       // Exercício 8:
+      const getDiv4 = document.querySelector('.right-content');
+      const uL = document.createElement('ul');
+      uL.className = 'unordernadedList';
+      getDiv4.appendChild(uL);
       for (let index = 1; index < 11; index += 1) {
-        const getDiv4 = document.querySelector('.right-content');
-        const uL = document.createElement('ul');
-        uL.className = 'unordernadedList';
-        getDiv4.appendChild(uL);
         const createLi = document.createElement('li');
         createLi.innerHTML = index;
         uL.appendChild(createLi);
@@ -127,7 +128,20 @@
         selectH3[key].className = 'description';
       }
 
+      // Exercício 3:
+      const getLeftContent = document.querySelector('.left-content');
+      getLeftContent.parentElement.removeChild(getLeftContent);
 
+      // Exercício 4: Feito na tag styles // Poderia ser feito aqui mesmo utilizando .style
+
+      // Exercício 5:
+      document.querySelector('.center-content').style.backgroundColor = 'green';
+
+      // Exercício 6:
+      for (let index = 0; index < 2; index += 1){
+      let selectLastChild = document.querySelector('ul').lastChild;
+      selectLastChild.parentElement.removeChild(selectLastChild);
+      }
     </script>
   </body>
 </html>

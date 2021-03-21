@@ -109,6 +109,25 @@
         createLi.innerHTML = index;
         uL.appendChild(createLi);
       }
+
+      // Exercício 9:
+      for (let i = 0; i < 3; i += 1) {
+        const createH3 = document.createElement('h3');
+        getMainContent.appendChild(createH3);
+      }
+
+      // Parte 2:
+      // Exercício 1:
+      document.getElementsByTagName('h1').className = 'title';
+
+      // Exercício 2:
+      const selectH3 = document.querySelectorAll('h3');
+      for (let key in selectH3) {
+        selectH3[key].innerText = key;
+        selectH3[key].className = 'description';
+      }
+
+
     </script>
   </body>
 </html>

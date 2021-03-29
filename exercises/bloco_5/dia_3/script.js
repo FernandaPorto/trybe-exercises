@@ -32,7 +32,7 @@ function createDaysOfTheWeek() {
   	}
 		
 		// Exercício 2: 		
-		function createButton() {
+		function createHolidayButton() {
 			const buttonFather = document.querySelector('.buttons-container');
 			const btn = document.createElement('button');
 			btn.type = 'button';
@@ -40,7 +40,7 @@ function createDaysOfTheWeek() {
 			btn.id = 'btn-holiday';
 			buttonFather.appendChild(btn);
 		}
-		createButton();
+		createHolidayButton();
 
 		// Exercício 3:
 		document.querySelector('#btn-holiday').addEventListener('click', () => {
@@ -48,10 +48,38 @@ function createDaysOfTheWeek() {
 			for (let key in holidays) {
 				if(holidays[key].style.backgroundColor === 'gray') {
 					holidays[key].style.backgroundColor = 'rgb(238,238,238)';
-					holidays[key].style.color = '#666'					
+					holidays[key].style.color = '#777'					
 				} else {
 					holidays[key].style.backgroundColor = 'gray';
 					holidays[key].style.color = 'yellow'
 				}
 			}
 		})
+
+		// Exercício 4:
+		function createFridayButton() {
+			const buttonFather = document.querySelector('.buttons-container');
+			const btn = document.createElement('button');
+			btn.type = 'button';
+			btn.innerHTML = 'Sexta-feira';
+			btn.id = 'btn-friday';
+			buttonFather.appendChild(btn);
+		}
+		createFridayButton();
+
+		// Exercício 5:
+		document.querySelector('#btn-friday').addEventListener('click', () => {
+			let dezFridays = [4, 11, 18, 25];
+			const fridays = document.getElementsByClassName('friday');
+			for (let key in fridays) {
+				if(fridays[key].innerText === 'SEXTOU') {
+					fridays[key].innerText = dezFridays[key];
+					fridays[key].style.color = '#777'					
+				} else {
+					fridays[key].innerText = 'SEXTOU';
+					fridays[key].style.color = 'green'
+				}
+			}
+		})
+
+		// Exercício 6: 

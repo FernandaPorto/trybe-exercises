@@ -8,4 +8,4 @@ const getSomeSleep = () => console.log('Partiu dormir!!');
 
 const doingThings = (action) => action();
 
-doingThings(wakeUp);
+doingThings(eatSomethig);

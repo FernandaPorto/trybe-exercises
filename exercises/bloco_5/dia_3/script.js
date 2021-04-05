@@ -100,3 +100,12 @@ function createDaysOfTheWeek() {
 			});
 		}
 		zoomOut();
+
+		// Exercício 7:
+		const tasks = (task) => {
+			const getDiv = document.querySelector('.my-tasks');
+			const span = document.createElement('span');
+			span.innerText = task;
+			getDiv.appendChild(span);
+		}
+		tasks('Teste');

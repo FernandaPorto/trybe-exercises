@@ -109,3 +109,13 @@ function createDaysOfTheWeek() {
 			getDiv.appendChild(span);
 		}
 		tasks('Teste');
+
+		// Ecercício 8:
+		const legend = (color) => {
+			const getDiv = document.querySelector('.my-tasks');
+			const div = document.createElement('div');
+			div.className = 'task';
+			div.style.backgroundColor = color;
+			getDiv.appendChild(div);
+		}
+		legend('red');

@@ -130,3 +130,13 @@ function createDaysOfTheWeek() {
 			})
 		}
 		clickTask();
+
+		// Exercício 10:
+		const getColor = () => {
+			const legendColor = document.querySelector('.selected');
+			const selectDays = document.querySelector('#days');
+			selectDays.addEventListener('click', (event) => {
+				event.target.style.backgroundColor = getComputedStyle(legendColor).backgroundColor;
+			})
+		}
+		getColor();

@@ -119,3 +119,14 @@ function createDaysOfTheWeek() {
 			getDiv.appendChild(div);
 		}
 		legend('red');
+
+		// Exercício 9:
+		const clickTask = () => {
+			const listenTask = document.querySelector('.task');
+			listenTask.addEventListener('click', (event) => {
+				const selected = document.querySelector('.selected');
+				event.target.classList.add('selected');
+				if (selected) selected.classList.remove('selected');
+			})
+		}
+		clickTask();

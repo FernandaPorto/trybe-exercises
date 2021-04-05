@@ -83,3 +83,20 @@ function createDaysOfTheWeek() {
 		})
 
 		// Exercício 6: 
+		const zoomIn = () => {
+		let zoomDay = document.querySelector('#days');
+		zoomDay.addEventListener('mouseover', (event) => {
+			event.target.style.fontSize = '30px';
+    		event.target.style.fontWeight = '600';
+		});
+		}
+		zoomIn();
+
+		const zoomOut = () => {
+			let mouseOut = document.querySelector('#days');
+			mouseOut.addEventListener('mouseout', (event) => {
+				event.target.style.fontSize = '20px';
+    			event.target.style.fontWeight = '400';
+			});
+		}
+		zoomOut();

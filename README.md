@@ -1,5 +1,5 @@
 # Trybe
-Este repositório contêm todas as atividades de aprendizagem desenvolvidas por _[Fernanda Porto](https://www.linkedin.com/in/fernanda-porto-oliveira/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :foguete:
+Este repositório contêm todas as atividades de aprendizagem desenvolvidas por _[Fernanda Porto](https://www.linkedin.com/in/fernanda-porto-oliveira/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :foguete: 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 ## Fundamentos do Desenvolvimento Web :marca_de_verificação_branca:
@@ -162,7 +162,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 30-3: _[Projeto - Webchat]()_
 ##### Bloco 34: Projeto
 - [ ] 34-1: _[Projeto - Trybeer V2]()_
-## Ciência da Computação :ampulheta_tempo_passando:
+## Ciência da Computação :ampulheta_tempo_passando: 
 ##### Bloco 35: Introdução - Ciência da Computação
 - [ ] 35-1: _Arquitetura de Computadores_
 - [ ] 35-2: _Arquitetura de redes_

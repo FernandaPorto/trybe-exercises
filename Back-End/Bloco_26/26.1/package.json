@@ -1,0 +1,16 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "Exercicio do bloco 26.1 - Calculo de IMC",
+  "main": "imc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node imc.js"
+  },
+  "author": "Fernanda Porto <fernanda.oliveira.mec@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "httpie": "^1.1.2",
+    "readline-sync": "^1.4.10"
+  }
+}
